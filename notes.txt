@@ -7,9 +7,17 @@ which will show both sides of the
 * * --> wildcard sign, can be used aloso inside of the files k*k.txt
 * cat --> shows contents of the file 
 * ls -1 --> shows all in the directory in one columnt 
-* >> --> takes printed output into the file 
+* > --> takes printed output into the file, it ovverides for files 
 * cp -r, rm -r -->  means recursively so including subfolders and files  
 * wc --> words count -l -lines -c -bytes, wc without anythings allows to provide you an input 
 after
 * order of flags shouldn't have meaning, but somethies have "-l 2" in longer version can be 
 "--lines=200" to shows how it looks in more expresive manner 
+* >> --> adds new line on the end of the file
+* < --> means giving content of the file into standard input of other command
+* | -->  pipe is adding input of output into pipes like |
+* curl --> fetches - selected 
+* gunzip --> gzip compessions 
+* grep --> filterse all lines which contains concreate words, -i ignore casing 
+
+
