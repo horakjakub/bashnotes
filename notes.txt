@@ -19,7 +19,8 @@ after
 * curl --> fetches - selected 
 * gunzip --> gzip compessions 
 * grep --> filterse all lines which contains concreate words, -i ignore casing 
-* head/tail -n1 --> takes one line from the begining or the end of the input  
+* head/tail -n1 --> takes one line from the begining or the end of the input / tail -f 
+showing current state of the file 
 * cal - shows calendar -3 -- interesting thing 
 * date --> shows current date 
 * fold -sw 30 -->  formating text, change the line length for the output 
