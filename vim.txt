@@ -1,0 +1,45 @@
+a --> to start insert mode 
+esc --> to go out from insert mode 
+:w --> write file 
+:wq --> saves and quites 
+ctrl+ c, esc --> start command mode
+## modes 
+
+hjkl --> arows in edit mode 
+0 --> beggining of the file 
+$ --> end of the line 
+gg --> begining of the line 
+G --> end of the file 
+
+x --> remove sing 
+d$ --> remove all the of the line 
+d0 --> remove all on the beggining of the line 
+dd --> remove whole line 
+dG - delete from curren postion to the end 
+d/somePattern -g - remove everything after pattern 
+d?somePattern -g - remove everything between pattarn
+
+Searching 
+
+/searchedPhrase --> search forward
+?searchedPhrase --> search backward --> works also with regex 
+n - previous occurance 
+N - next occurance 
+
+t or T character -> goes to character previous selected character in the line  
+f or F character -> goes to slected character in the line 
+
+:s/pattern/nextThing -> replace pattern with next Thing in the line 
+:%s/pattern/nextThing -> replace pattern in whole file 
+
+u -->  undo 
+ctrl + r --> redo 
+
+VISUAL MODE 
+v --> goes into visual mode, V goes into visual-line mode 
+> --> indent the text right by shiftwidth 
+< --> indent the text left by shiftwidth 
+y --> to paste 
+x or d --> to delete
+
+ 
