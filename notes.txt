@@ -1,3 +1,4 @@
+### BASICS 
 
 * man --> shows different options for selected comand "man ls" f.e. shows every option for ls 
 command
@@ -29,4 +30,69 @@ showing current state of the file
 touch new-file-`date +%F`.txt which adds date to the name of the file. Really cool!
 * $((...)) - arethimetic actions 
 * xarg --> to check in the web
+* export --> shows all available environment variables, and allows user to add new variables
+ available in other places  
+* MSG= something --> set variable for current terminal, but is not exportable 
+* xdg-open -->  opens videos from command line 
+* nautilus --> opens UI explorer in selected place 
+* /bin/ --> contains list of programs available in cli 
+* '' --> quotes are escaping special signs for unix 
+* "" --> double quotes are not escaping env variables
+* \ --> backspace allows to ignore special cases
+
+### CODITIONAL COMMANDS 
+
+* while true; do COMMAND; done; --> is allows you to execute command as long as that terminal 
+session lives
+* for x in {0..10}; echo $x; done --> is change value for x
+
+and you can you is in combination with pipes like 
+
+ls -l | while read LINE; do echo -n "$LINE; wc -l $LINE; done
+ 
+### SCRIPTS
+
+all script files has to have changed permissions to be executable 
+so "chmod -x" has to be run
+each file starts with selecting executing program like '#!/bin/bash' 
+ 
+read SOMETHING --> enables to input something which will be saved as variable and can 
+be used later in the program
+echo -n --> is not creating new line 
+
+N
+adding your program to /usr/bin/ makes available for your system without adding commands =
+
+## PERMISIONS
+
+there are three groups of permissions 
+
+ls -l
+  User Group Other  OWNER_NAME GROUP_NAME  
+  rwx   r-w   r-x  
+
+* groups --> shows you a group 
+* chmod --> changes permisisions in "chmod 647" or "chmod go+rw" or "chmod u-w"
+4 for for writible 
+2 for read 
+1 for execute 
+
+exit codes 
+
+* echo $? --> checks exit code of lasts commend this has meaning during chaning opeartions 
+  
+* && --> allows to chain commands if commands in chains are successfull 
+* || --> is first command works, second doeas't work
+* ; -->  next command is always execute
+* () --> subshells -> allows you to include subprogram in you program 
+subcomands 
+
+## COMMAND SIGNALS
+
+*ctrl + c --> 
+*ctrl + z --> move program to backgroung , fg -> to resume program, jobs - list programs run 
+fg %1, bg allows you to continue executing jobs in back ground 
+*kill --> stops selected program  -9 - kill porgram without questionning
+*pgrep -lf --> show all programs by name 
+*pkill  --> kills program by  
 
