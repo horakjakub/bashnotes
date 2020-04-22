@@ -42,4 +42,6 @@ v --> goes into visual mode, V goes into visual-line mode
 y --> to paste 
 x or d --> to delete
 
+:call ...#...() 
+:map --> shows all the keymaping
  
